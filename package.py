@@ -1,6 +1,6 @@
 name = "tmxparser"
 
-version = "2.0.1.pvx1"
+version = "2.1.0.pvx1"
 
 authors = [
     "Tamir Atlas, Andrew Kelley et al."
@@ -15,7 +15,7 @@ build_requires = [
 ]
 
 variants = [
-    ["platform-linux", "arch-x86_64", "os-Fedora-25"],
+    ["platform-linux", "arch-x86_64", "os-Fedora-28"],
 ]
 
 config = {
