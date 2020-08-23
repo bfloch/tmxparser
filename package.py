@@ -14,9 +14,11 @@ description = \
 build_requires = [
 ]
 
-variants = [
-    ["platform-linux", "arch-x86_64", "os-Fedora-28"],
-]
+@early()
+def variants():
+    from rez.package_py_utils import expand_requires
+    requires = ["platform-**", "arch-**", "os-**"]
+    return [expand_requires(*requires)]
 
 config = {
     "local_packages_path": "${PVX_REZ_LOCAL_THIRDPARTY_DIR}",
